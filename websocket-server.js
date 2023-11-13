@@ -11,6 +11,8 @@ let transporter = nodemailer.createTransport({
         user: "luisgustavo20061@gmail.com",
         pass: "lmwr xead llux nuye",
     },
+    debug: true,
+    logger: true,
 });
 
 // Middleware para fazer o parsing da query string (req.query)

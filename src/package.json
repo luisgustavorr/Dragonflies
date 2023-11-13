@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "websocket-server.js",
+  "engines": {
+    "node":"18"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start_sistem":"node websocket-server.js"

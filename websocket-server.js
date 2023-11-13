@@ -4,7 +4,7 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 let transporter = nodemailer.createTransport({
-    host: "smtp.gmail.com",
+    host: "smtps://smtp.gmail.com",
     port: 465,
     secure: true,
     auth: {

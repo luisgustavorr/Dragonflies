@@ -37,7 +37,7 @@ const enviarEmail = async (data) => {
             from: 'Super Error Log <luisgustavo20061@gmail.com>',
             to: data.Email,
             subject: "Erro no sistema",
-            html: `O sistema "${data.Sistema}" apresentou o seguinte erro: ${data.Error}<br>Data: ${diaFormatado} às ${horaFormatada}`,
+            html: `O sistema "${data.Sistema}" apresentou o seguinte erro: ${data.Error}<br> No dia: ${diaFormatado} às ${horaFormatada}`,
         });
 
         console.log(message);

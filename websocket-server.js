@@ -4,13 +4,13 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 let transporter = nodemailer.createTransport({
-    service: 'gmail', 
+    host: "smtps://smtp.gmail.com",
+    port: 465,
+    secure: true,
     auth: {
         user: "luisgustavo20061@gmail.com",
         pass: "lmwr xead llux nuye",
     },
-    debug: true,
-    logger: true,
 });
 
 // Middleware para fazer o parsing da query string (req.query)

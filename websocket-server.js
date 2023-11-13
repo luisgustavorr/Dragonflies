@@ -2,17 +2,18 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const nodemailer = require("nodemailer");
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 let transporter = nodemailer.createTransport({
-    host: "smtp.gmail.com", // replace with your email service
-    port:587,
-    secure: false,
+    host: "smtps://smtp.gmail.com",
+    port: 465,
+    secure: true,
     auth: {
-        user:"luisgustavo20061@gmail.com",
-        pass:"lmwr xead llux nuye"
-    }
-})
+        user: "luisgustavo20061@gmail.com",
+        pass: "lmwr xead llux nuye",
+    },
+});
+
 
 
 // Middleware para fazer o parsing do corpo da requisição (req.body)
@@ -39,8 +40,8 @@ app.post('/monitorar-post', (req, res) => {
         from:'Super Error Log <luisgustavo20061@gmail.com>',
         to:data.Email,
         subject:"Erro no sistema",
-        text:`O sistema "${data.Sistema}" apresentou o seguinte erro: ${data.Erro} no dia ${diaFormatado} as ${horaFormatada}`,
-        // html:"confira o erro no seguinte <a href='google.com'> aqui </a>"
+        html: `O sistema "${data.Sistema}" apresentou o seguinte erro: ${data.Erro}<br>Data: ${diaFormatado} às ${horaFormatada}`,
+
     }).then(message => {
         console.log(message);
     }).catch(err=> {

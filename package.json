@@ -4,11 +4,11 @@
   "description": "",
   "main": "websocket-server.js",
   "engines": {
-    "node":"18"
+    "node": "18"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start_sistem":"node websocket-server.js"
+    "start_sistem": "node websocket-server.js"
   },
   "keywords": [],
   "author": "",
@@ -19,5 +19,8 @@
     "mysql": "^2.18.1",
     "nodemailer": "^6.9.7",
     "ws": "^8.14.2"
+  },
+  "devDependencies": {
+    "@vercel/node": "^3.0.9"
   }
 }

@@ -77,6 +77,6 @@ Mencione as ferramentas que você usou para criar seu projeto
 
 ## 📄 Licença
 
-Este projeto está sob a licença (sua licença) - veja o arquivo [LICENSE.md](https://github.com/luisgustavorr/Dragonflies/LICENSE) para detalhes.
+Este projeto está sob a licença (sua licença) - veja o arquivo [LICENSE.md](https://github.com/luisgustavorr/Dragonflies/blob/main/LICENSE) para detalhes.
 
 

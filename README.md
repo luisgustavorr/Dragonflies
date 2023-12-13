@@ -1,4 +1,4 @@
-# Dragonflies
+# 𓆤 Dragonflies 𓆤
 O projeto foi criado com a intenção de conseguir receber os bugs que ocorrem no sistema pelo email, futuramente haverá um aplicativo para receber esses erros.
 Com essa API é possível descobrir erros no sistema antes que um usuário o note, assim reduzindo problemas relacionados a bugs.
 

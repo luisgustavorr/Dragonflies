@@ -15,7 +15,7 @@ class ReportError
 	{
 		// Construa a URL com os parâmetros necessários
 		$url = 'https://super-error-log-git-main-luisgustavorrs-projects.vercel.app/monitorar-get?' . http_build_query([
-			'Sistema' => 'MixSalgados',
+			'Sistema' => 'Seu Sistema',
 			'Error' => $error,
 			'Email' => $email,
 		]);
